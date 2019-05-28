@@ -7,8 +7,11 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: defaultText
+            value: ''
         }
+    }
+    componentDidMount() {
+      fetch(defaultText).then(response => response.text()).then(text => this.setState({value: text}));
     }
     render() {
         console.log(this.state.value);
