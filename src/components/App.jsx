@@ -7,18 +7,32 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: ''
+            text: ''
         }
+        this.handleChange = this.handleChange.bind(this);
     }
+
+    handleChange(event) {
+        this.setState({text: event.target.value})
+    }
+
     componentDidMount() {
-      fetch(defaultText).then(response => response.text()).then(text => this.setState({value: text}));
+      fetch(defaultText)
+          .then(response => response.text())
+          .then(text => this.setState({text}));
     }
     render() {
-        console.log(this.state.value);
+        const { text } = this.state;
         return (
             <div>
-                <Editor />
-                <Previewer text={this.state.value}/>
+                <Editor
+                    value={text}
+                    onChange={this.handleChange}
+                >
+                </Editor>
+                <Editor
+                />
+                <Previewer text={this.state.text}/>
             </div>
         )
     }

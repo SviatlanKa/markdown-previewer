@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
-import marked from 'react-marked';
+import ReactMarkdown from 'react-markdown/with-html';
 
 class Previewer extends Component {
     render() {
-      marked.setOptions({
-          renderer: new marked.Renderer(),
-          gfm: true,
-          tables: true,
-          breaks: false,
-          pedantic: false,
-          sanitize: true,
-          smartLists: true,
-          smartypants: false
-      });
         return(
             <div id="previewer">
-                {marked(this.props.text)}
+                <ReactMarkdown
+                    className="container"
+                    source={this.props.text}
+                    escapeHtml={false}
+                />
             </div>
         )
     }

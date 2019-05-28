@@ -1,6 +1,6 @@
-#This is a Markdown Previewer
+# This is a Markdown Previewer
 ==============================
-##You see it when my markdown previewer first loads.
+## You see it when my markdown previewer first loads.
 
 This is inline code `<div className="first-question">How's there?</div>`
 
@@ -15,6 +15,7 @@ This is unordered list:
 + Third item
 
 This is ordered list:
+
 1. One
 2. Two
 3. Three
@@ -24,6 +25,7 @@ This quote from my Random Quote Machine:
   by **_Rich Cook_**
   
 This is a PrintScreen of my Random Quote Machine:
-![alt text](../img/printscreen.jpg "PrintScreen of my Random Quote Machine")
+
+![alt text](https://i.ibb.co/t4fXZdk/printscreen.jpg "PrintScreen of my Random Quote Machine")
 
 You can see [Repository on GitHub](https://github.com/SviatlanKa/markdown-previewer)
