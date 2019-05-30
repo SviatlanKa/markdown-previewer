@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Editor from './Editor';
 import Previewer from './Previewer';
 import defaultText from '../docs/defaultText.md';
+import './App.css';
 
 class App extends Component {
     constructor(props) {
@@ -12,8 +13,8 @@ class App extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange(event) {
-        this.setState({text: event.target.value})
+    handleChange(text) {
+        this.setState({ text });
     }
 
     componentDidMount() {
@@ -22,17 +23,14 @@ class App extends Component {
           .then(text => this.setState({text}));
     }
     render() {
-        const { text } = this.state;
         return (
-            <div>
+            <div className="wrapper">
                 <Editor
-                    value={text}
-                    onChange={this.handleChange}
-                >
-                </Editor>
-                <Editor
+                    text={this.state.text}
+                    onHandleChange={this.handleChange}
                 />
-                <Previewer text={this.state.text}/>
+                <Previewer text={this.state.text}
+                />
             </div>
         )
     }

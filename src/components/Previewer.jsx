@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown/with-html';
+import './App.css';
 
 class Previewer extends Component {
     render() {
@@ -8,7 +9,7 @@ class Previewer extends Component {
                 <ReactMarkdown
                     className="container"
                     source={this.props.text}
-                    escapeHtml={false}
+                    escapeHtml={true}
                 />
             </div>
         )

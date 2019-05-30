@@ -26,6 +26,6 @@ This quote from my Random Quote Machine:
   
 This is a PrintScreen of my Random Quote Machine:
 
-![alt text](https://i.ibb.co/t4fXZdk/printscreen.jpg "PrintScreen of my Random Quote Machine")
+![random-img](https://i.ibb.co/t4fXZdk/printscreen.jpg "PrintScreen of my Random Quote Machine")
 
 You can see [Repository on GitHub](https://github.com/SviatlanKa/markdown-previewer)

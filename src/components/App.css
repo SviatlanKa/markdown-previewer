@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  width: 100vw;
+}
+
+#editor, #previewer {
+  padding: 3vh 3vw;
+}
+
+#editor {
+  width: 50vw;
+  height: 100vh;
+  font-size: 1.2em;
+}
+#previewer {
+  width: 50vw;
+}
+#editor img[alt=random-img] {
+  width: 300px;
+}
