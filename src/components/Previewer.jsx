@@ -7,9 +7,8 @@ class Previewer extends Component {
         return(
             <div id="previewer">
                 <ReactMarkdown
-                    className="container"
                     source={this.props.text}
-                    escapeHtml={true}
+                    escapeHtml={false}
                 />
             </div>
         )
