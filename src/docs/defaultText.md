@@ -1,8 +1,8 @@
 # This is a Markdown Previewer
-==============================
+___
 ## You see it when my markdown previewer first loads.
 
-This is inline code `<div className="first-question">How's there?</div>`
+This is inline code `<div class="first-question">How's there?</div>`
 
 ```javascript
 //This is a code block
@@ -25,8 +25,8 @@ This quote from my Random Quote Machine:
 >Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.
   by **_Rich Cook_**
   
-This is a PrintScreen of my Random Quote Machine:
+This is my cat Joe photo:
 
-![random-img](https://i.ibb.co/t4fXZdk/printscreen.jpg "PrintScreen of my Random Quote Machine")
+![cat-img](https://thumb.ibb.co/bypziK/20180517-212740.jpg "My cat Joe photo")
 
 You can see [Repository on GitHub](https://github.com/SviatlanKa/markdown-previewer)
