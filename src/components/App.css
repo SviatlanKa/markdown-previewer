@@ -1,27 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Roboto:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Lato:300|Raleway&display=swap');
 
 .wrapper {
   display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+.main {
+  display: flex;
   width: 90vw;
+  margin: 0 5%;
+}
+
+#header, #footer {
+  text-align: center;
+  color: #a8b6ad;
+}
+
+#footer {
+  margin: 1vw 0 5px 0;
+}
+
+.github-ref {
+  text-decoration: none;
+  color: #a8b6ad;
 }
 
 #editor, #previewer {
   padding: 3vh 3vw;
   width: 40vw;
+  height: 77vh;
   overflow-y: auto;
 }
 
 #editor {
   margin-right: 1vw;
-  height: 100vh;
   font-family: 'Anonymous Pro', monospace;
   font-size: 1em;
   line-height: 1.2em;
   color: #a8b6ad;
   background-color: #2b2b2b;
 }
+
+#editor:focus {
+  outline: none;
+}
 #previewer {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: #D9D9D9;
 }
 
